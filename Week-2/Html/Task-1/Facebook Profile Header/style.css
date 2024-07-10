@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    
+}
+.wrapper{
+    width: 380px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+    
+    
+}
+.cover{
+    
+    height: 160px;
+    background: gray;
+}
+.cover img{
+    width: 380px;
+    height: 160px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.circle{
+    width: 150px;
+    height: 155px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    top: -90px;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.id{
+    position: relative;
+    top: -80px;
+    text-align: center;
+    
+}
+h5{
+    color: rgba(56, 54, 54);
+    font-weight: bold;
+}
+.buttons{
+    position: relative;
+    top: -70px;
+}
+button{
+    padding: 10px;
+    border: none;
+    background: #bbb7a9;
+    border-radius: 8px;
+}
+button:first-child{
+    width: 70% ;
+    margin-left: 10px;
+}
+button:first-child i{
+    margin-right: 10px;
+}
+button:nth-child(2){
+    width: 15%;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+hr{
+    position: relative;
+    top: -30px;
+    margin-top: -30px;
+}
+.details{
+    margin-left: 4px;
+    position: relative;
+    top: -15px;
+    
+}
+.details ul li{
+    list-style-type: none;
+    margin-bottom: 4px;
+    margin-left: 8px;
+}
+.details ul li i{
+    color: rgb(40, 39, 39);
+    padding: 8px;
+}
