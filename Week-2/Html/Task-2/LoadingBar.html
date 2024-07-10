@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <style>
+        #bar{
+            position: relative;
+            width: 200px;
+            height: 8px;
+            background-color: rgb(214, 212, 212);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        #container{
+            margin-top: 20%;
+            margin-left: 45%;
+        }
+        #container h2{
+             margin-left: 6%;
+        }
+        .bar-1::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.333), rgba(117, 123, 205, 0.891));
+            animation: loading-animation 1.3s infinite;
+            border-radius: 1em;
+        }
+        @keyframes loading-animation {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Loading...</h2>
+        <div id="bar" class="bar-1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Balls Loader</title>
+    <style>
+        .circle{
+            display: inline-block ;
+            background-color: blue;
+            height: 15px;
+            width: 15px;
+            border-radius: 25px;
+        }
+        #container{
+            height: 200px;
+            width: 100px;
+            margin-top: 20% ;
+            margin-left: 45%;
+
+        }
+        #ball-1{
+            -webkit-animation-name: bounce;
+            -webkit-animation-delay: 1s;
+            -webkit-animation-duration: 1.2s;
+            -webkit-animation-iteration-count: infinite;
+
+        }
+        #ball-2{
+            -webkit-animation-name: bounce;
+            -webkit-animation-delay: 1.1s;
+            -webkit-animation-duration: 1.2s;
+            -webkit-animation-iteration-count: infinite;
+        }
+        #ball-3{
+            -webkit-animation-name: bounce;
+            -webkit-animation-delay: 1.2s;
+            -webkit-animation-duration: 1.2s;
+            -webkit-animation-iteration-count: infinite;
+        }
+        @-webkit-keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(23px);
+            }
+            60% {
+                transform: translateY(-25px);
+            }
+            80%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div id="container">
+         <div id="ball-1" class="circle"></div>
+         <div id="ball-2" class="circle"></div>
+         <div id="ball-3" class="circle"></div>
+    </div>
+</body>
+</html>
