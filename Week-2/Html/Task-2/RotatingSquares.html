@@ -18,7 +18,7 @@
     width: 10px;
     height: 10px;
     background-color: #529bcc; /* Adjust color as needed */
-    animation: rotate 2s linear infinite;
+    animation: scaleAnimation 2s infinite;
   }
 
   .loader .square:nth-child(1) {
@@ -41,12 +41,12 @@
     left: 0;
   }
 
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
+  @keyframes scaleAnimation {
+    0%, 100% {
+      transform: scale(1);
     }
-    to {
-      transform: rotate(360deg);
+    50% {
+      transform: scale(1.5);
     }
   }
 </style>
