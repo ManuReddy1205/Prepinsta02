@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-inverse{
+    margin: 0;
+    padding: 8px;
+}
+.navbar-header{
+    color: white;
+    margin-top: 12px;
+    font-size: 20px;
+}
+.navbar-nav li a{
+    margin: 0 55px;
+
+}
+
+#container{
+    display: flex;
+}
+.box{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cbc8c8;
+    margin: 20px;
+    background: rgb(243, 238, 238);
+    
+}
+
+#box1 h2, #box2 h2{
+    text-align: center;
+    padding: 10px 0 15px 0;
+}
+
+#box1 .product span button{
+    margin: 3px 0px 3px 500px;
+    
+}
+
+#box1 button, #box2 button{
+    background: blue;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+#box2 button{
+    margin-bottom:8px ;
+    align-items: center;
+    
+}
+
+#box2 .cart .middle{
+   margin-left: 450px; 
+   padding: 0 15px 0 15px;
+   
+}
+#box2 .cart .last{
+    margin-left: 400px; 
+ }
+
+.total{
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ /* Base styles for all screen sizes */
+#container {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line if needed */
+    gap: 20px; /* Adds space between boxes */
+}
+
+.box {
+    flex: 1; /* Allows boxes to grow and shrink as needed */
+    padding: 10px;
+    border: 1px solid #cbc8c8;
+    background: rgb(243, 238, 238);
+    margin: 10px; /* Margin around boxes */
+}
+
+
+
+@media (max-width: 1200px) {
+    #box1, #box2 {
+        flex: 1 1 calc(50% - 20px); /* Two boxes per row, adjusting for gap */
+    }
+}
+
+@media (max-width: 768px) {
+    #box1, #box2 {
+        flex: 1 1 100%; /* One box per row */
+    }
+}
+
+@media (max-width: 480px) {
+    #box1, #box2 {
+        padding: 5px; /* Smaller padding for smaller screens */
+    }
+
+    .box h2 {
+        font-size: 18px; /* Smaller font size for headings */
+    }
+
+    /* Additional adjustments if needed */
+}
+
